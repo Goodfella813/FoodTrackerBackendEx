@@ -1,0 +1,4 @@
+module agentcore {
+    umbrella "/Users/gaetanosansiviero/FoodTrackerBackend/FoodServer/.build/checkouts/omr-agentcore-1953519618180466439/src/agentcore/include"
+    export *
+}

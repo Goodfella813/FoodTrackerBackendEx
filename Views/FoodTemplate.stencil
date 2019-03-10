@@ -1,0 +1,17 @@
+<html>
+
+There are {{ meals.count }} meals. <br />
+
+{% for meal in meals %}
+- {{ meal.name }} with rating {{ meal.rating }} <br />
+<img src="images/{{ meal.name }}.jpg" alt="meal image" height="100"> <br />
+{% endfor %}
+
+<form action="foodtracker" method="post" enctype="multipart/form-data">
+    Name: <input type="text" name="name"><br>
+    Rating: <input type="range" name="rating" min="0" max="5"><br>
+    File: <input type="file" name="photo"><br>
+    <input type="submit" value="Submit">
+</form>
+
+</html>
